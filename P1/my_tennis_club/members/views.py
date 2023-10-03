@@ -37,6 +37,7 @@ def testing(request):
     #mydata = Member.objects.all().order_by('firstname').values()
     #mydata = Member.objects.all().order_by('-firstname').values()
     mydata = Member.objects.all().order_by('lastname', '-id').values()
+    #mydata = Member.objects.all()
 
     template = loader.get_template('template.html')
     context = {
