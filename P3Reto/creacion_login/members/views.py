@@ -7,7 +7,7 @@ from django.contrib.auth import logout
 
 @login_required
 def index(request):
-    return render(request, 'all_members.html')
+    return render(request, 'base.html')
 
 def salir(request):
     logout(request)
