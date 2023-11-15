@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{2A03B808-D516-47F9-8322-EA73E53B7148}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AhorcadoDjango/MainPage.xaml">
+    <Files>
+      <File FileName="AhorcadoDjango/MainPage.xaml.cs" Line="106" Column="64" />
+      <File FileName="AhorcadoDjango/MainPage.xaml" Line="55" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AhorcadoDjango" expanded="True">
+            <Node name="AhorcadoDjango">
+              <Node name="MainPage.xaml" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AhorcadoDjango PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
