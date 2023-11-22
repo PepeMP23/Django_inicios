@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html>
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ mystudent.firstname }} {{ mystudent.lastname }}
+{% endblock %}
 
 <body>
 
@@ -10,5 +13,4 @@
 
 <p>Back to <a href="/students">Students</a></p>
 
-</body>
-</html>
+{% endblock %}

@@ -8,6 +8,10 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
+
+pepe
+12345678
+
 """
 
 from pathlib import Path
@@ -25,7 +29,7 @@ SECRET_KEY = "django-insecure-rwezinc*1%q4#0a)j3660&c*6g$l)n+lj(9zs#2zknd!+&*@j)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
