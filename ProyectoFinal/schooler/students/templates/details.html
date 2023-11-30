@@ -1,16 +1,15 @@
 {% extends "master.html" %}
 
 {% block title %}
-  Details about {{ mystudent.firstname }} {{ mystudent.lastname }}
+    Details about {{ mystudent.firstname }} {{ mystudent.lastname }}
 {% endblock %}
 
-<body>
 
-<h1>{{ mystudent.firstname }} {{ mystudent.lastname }}</h1>
-  
-<p>Phone: {{ mystudent.phone }}</p>
-<p>Student since: {{ mystudent.joined_date }}</p>
-
-<p>Back to <a href="/students">Students</a></p>
-
+{% block content %}
+    <div class="mycard">
+        <h1>{{ mystudent.firstname }} {{ mystudent.lastname }}</h1>
+        <p>Phone: {{ mystudent.phone }}</p>
+        <p>Student since: {{ mystudent.joined_date }}</p>
+    </div>
+    
 {% endblock %}

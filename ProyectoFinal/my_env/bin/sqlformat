@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/pepe/Documents/LaSalle/4to Semestre/Desarrollo integral para aplicaciones empresariales/Django_inicios/Schooler/my_env/bin/python" "$0" "$@"
+'''exec' "/Users/pepe/Documents/LaSalle/4to Semestre/Desarrollo integral para aplicaciones empresariales/Django_inicios/ProyectoFinal/my_env/bin/python" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

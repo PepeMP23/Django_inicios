@@ -1,0 +1,81 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Schooler - Lista de Inscripciones
+{% endblock %}
+
+{% block content %}
+    <header class="masthead">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-center text-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 25px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'estudiantes' %}">Estudiantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'profesores' %}">Profesores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href="{% url 'materias' %}">Materias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'inscripciones' %}">Inscripciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'calificaciones' %}">Calificaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'eventos' %}">Eventos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="tituloAcceso my-4">Inscripciones</h1>
+    <div class="container">
+        <table class="table table-striped table-bordered" >
+            <thead>
+                <tr>
+                    <th scope="col">Id Inscripción</th>
+                    <th scope="col">Estudiante</th>
+                    <th scope="col">Costo</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for x in myinscripciones %}
+                    <tr>
+                        <td>{{ x.idInscripcion }}</td>
+                        <td>{{ x.nombre_estudiante }}</td>
+                        <td>{{ x.costo }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer bg-secondary-emphasis mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 h-100 text-center text-lg-start my-auto text-center">
+                    <p class="small mb-4 mb-lg-0 text-center text-white">&copy; Schooler 2023. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}

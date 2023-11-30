@@ -4,12 +4,266 @@
     Schooler
 {% endblock %}
 
+{% load static %}
 
 {% block content %}
-    <h1>Schooler</h1>
+<header class="masthead">
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="text-center text-white">
+                    <!-- Page heading-->
+                    <h1 class="mb-5">Bienvenidos a schooler!</h1>
+                    <!-- Signup form-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Email address input-->
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                                <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                                <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                            </div>
+                            <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                <p>To activate this form, sign up at</p>
+                                <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-    <h3>Students</h3>
-    
-    <p>Check out all our <a href="students/">students</a></p>
-  
+<!-- Icons Grid-->
+<section class="features-icons bg-light text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>
+                    <h3>Accede de donde sea</h3>
+                    <p class="lead mb-0">Puedes ingresar cuado y donde quieras.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
+                    <h3>Seguro y transparente</h3>
+                    <p class="lead mb-0">Tus datos estan protegidos por distintas capas de seguridad.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
+                    <h3>Fácil de usar</h3>
+                    <p class="lead mb-0">Nuestros ingenieros realizaron un sistema amigable para el usuario. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Image Showcases-->
+<section class="showcase">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img">
+                <img src="{% static 'img/bg-showcase-1.jpg' %}" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Automatización Escolar Simplificada</h2>
+                <p class="lead mb-0">Nuestra herramienta agiliza tareas educativas diarias. Simplifica la gestión de calificaciones y horarios, liberando tiempo para la enseñanza. Ofrece un lugar central para eventos, mejorando la comunicación entre escuela, padres y estudiantes.</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-1 text-white showcase-img">
+                <img src="{% static 'img/bg-showcase-2.jpg' %}" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-2 my-auto showcase-text">
+                <h2>Acceso Claro y Colaborativo</h2>
+                <p class="lead mb-0">Nuestro software permite a padres ver el progreso académico de sus hijos. Centraliza datos clave para colaboración efectiva entre escuela y hogar, promoviendo transparencia y apoyo en la educación.</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img">
+                <img src="{% static 'img/bg-showcase-3.jpg' %}" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Conexión Directa y Actualizada</h2>
+                <p class="lead mb-0">Nuestra plataforma posibilita la comunicación instantánea entre profesores, alumnos y padres. Ofrece notificaciones sobre eventos y progreso académico, fomentando una participación activa para una educación colaborativa.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section - Home Page -->
+<section id="pricing" class="pricing my-4 py-4 bg-light">
+
+    <!--  Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2 class="text-center mt-4">Paquetes</h2>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+
+        <div class="row g-4 mb-4">
+            <div class="col-lg-4">
+                <div class="pricing-item" style="background-color: white;">
+                    <h3>Plan Gratuito</h3>
+                    <h4><sup>$</sup>0<span> / mes</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> <span>Acceso básico a funcionalidades</span></li>
+                        <li><i class="bi bi-check"></i> <span>Seguimiento de calificaciones</span></li>
+                        <li><i class="bi bi-check"></i> <span>Reportes académicos simples</span></li>
+                        <li class="na"><i class="bi bi-x"></i> <span>Funcionalidades avanzadas</span></li>
+                        <li class="na"><i class="bi bi-x"></i> <span>Soporte premium</span></li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Obtener Ahora</a></div>
+                </div>
+            </div><!-- End Pricing Item -->
+            
+            <div class="col-lg-4">
+                <div class="pricing-item" style="background-color: white;">
+                    <h3>Plan Escolar</h3>
+                    <h4><sup>$</sup>29<span> / mes</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> <span>Acceso completo a funcionalidades</span></li>
+                        <li><i class="bi bi-check"></i> <span>Seguimiento detallado de calificaciones</span></li>
+                        <li><i class="bi bi-check"></i> <span>Reportes académicos avanzados</span></li>
+                        <li><i class="bi bi-check"></i> <span>Soporte estándar</span></li>
+                        <li class="na"><i class="bi bi-x"></i> <span>Funcionalidades premium</span></li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Obtener Ahora</a></div>
+                </div>
+            </div><!-- End Pricing Item -->
+            
+            <div class="col-lg-4">
+                <div class="pricing-item" style="background-color: white;">
+                    <h3>Plan Avanzado</h3>
+                    <h4><sup>$</sup>49<span> / mes</span></h4>
+                    <ul>
+                        <li><i class="bi bi-check"></i> <span>Acceso completo a funcionalidades premium</span></li>
+                        <li><i class="bi bi-check"></i> <span>Seguimiento personalizado de calificaciones</span></li>
+                        <li><i class="bi bi-check"></i> <span>Reportes académicos detallados</span></li>
+                        <li><i class="bi bi-check"></i> <span>Soporte premium</span></li>
+                    </ul>
+                    <div class="text-center"><a href="#" class="buy-btn">Obtener Ahora</a></div>
+                </div>
+            </div><!-- End Pricing Item -->
+            
+                
+
+        </div>
+    </div>
+
+  </section><!-- End Pricing Section -->
+
+<!-- Testimonials-->
+<section class="testimonials text-center bg-white">
+    <div class="container">
+        <h2 class="mb-5">Lo que la gente dice de schooler...</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3"  src="{% static 'img/testimonials-1.jpg' %}" alt="..." />
+                    <h5>Margaret E.</h5>
+                    <p class="font-weight-light mb-0">"Es fantastico! Muchas gracias!"</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="{% static 'img/testimonials-2.jpg' %}" alt="..." />
+                    <h5>Fred S.</h5>
+                    <p class="font-weight-light mb-0">"Schooler es asombroso. Lo he estado usando por mucho tiempo."</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="{% static 'img/testimonials-3.jpg' %}" alt="..." />
+                    <h5>Sarah W.</h5>
+                    <p class="font-weight-light mb-0">"Me encanta su esquema de precios accesibles!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action-->
+<section class="call-to-action text-white text-center" id="signup">
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <h2 class="mb-4">¿Listo para iniciar? Inicia ahora!</h2>
+                <!-- Signup form-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
+                    <!-- Email address input-->
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                            <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
+                            <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
+                        </div>
+                        <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            <p>To activate this form, sign up at</p>
+                            <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer class="footer bg-secondary-emphasis">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 h-100 text-center text-lg-start my-auto text-center">
+                <p class="small mb-4 mb-lg-0 text-center text-white">&copy; Schooler 2023. All Rights Reserved.</p>
+            </div>
+            
+        </div>
+    </div>
+</footer>
 {% endblock %}

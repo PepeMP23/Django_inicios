@@ -4,15 +4,13 @@
     Schooler - List of all students
 {% endblock %}
 
-
 {% block content %}
-
-  <h1>Students</h1>
-    
-  <ul>
-    {% for x in mystudents %}
-      <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
-    {% endfor %}
-  </ul>
-  
+    <div class="mycard">
+        <h1>Students</h1>
+        <ul>
+            {% for x in mystudents %}
+                <li onclick="window.location = 'details/{{ x.id }}'">{{ x.firstname }} {{ x.lastname }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}
